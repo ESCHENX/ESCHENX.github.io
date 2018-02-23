@@ -260,3 +260,16 @@ h2{
 .text-link:hover{
     text-decoration: underline;
 }
+
+.gotop-btn{
+    width: 40px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+}
+
+.gotop-btn:hover{
+    transform: scale(1.2,1.2);
+
+}
