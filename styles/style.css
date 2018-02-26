@@ -32,17 +32,17 @@ body{
     float:left;
     font-size:18px;
     text-align:center;
-    padding:14px 17px;
+    padding:14px 14px;
 	text-decoration:none;
   }
   
   .navbar a:hover {
-    background-color:#3d668f;
-    text-decoration:none
+    text-decoration:none;
+      color: #ffc680;
   }
   
   .navbar a.active{
-    background-color:#3d668f;
+    color:#ffc680;
     
   }
   
@@ -69,15 +69,20 @@ h2{
     font-family:Verdana;
       }
   
-  .button{
+    .button{
     color:white;
-    background-color:#1f1f14; /*grey */
-    border:none;
-    margin: 4px 30px;
+    background-color:#1f1f14;
+    border:0px solid transparent;
+    border-radius: 5px;
+    margin: 4px 25px;
     padding:15px 30px;
     text-align: center;
- 
   }
+
+  .button:hover{
+    cursor: pointer;
+    border:none;
+}
   
 * {
     box-sizing: border-box;
