@@ -1,9 +1,0 @@
-1. get rid of gaps around background image, especially on mobile devices display;
-
-2. navigation menu.
-2.1 desktop version change fonts and location move to right a little;
-2.2 mobile devices version create a drop-down menu;
-
-3. go back to top button;
-
-4. new blog section
