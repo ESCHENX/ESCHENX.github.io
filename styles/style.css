@@ -178,10 +178,9 @@ h2{
   
 
   .social-icon{
-    border:3px solid transparent;
-    width:5%;
+    width:5vw;
     padding:10px 10px;
-    margin:0px 0px;
+    margin:0;
     background-color:transparent;
     position:static;
     transition: transform .2s;  
