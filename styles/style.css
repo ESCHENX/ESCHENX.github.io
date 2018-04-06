@@ -9,6 +9,7 @@ body{
   align-items:center;
 }
 
+
   #bgimage1{
     background: url("/images/bgimg1.jpg")  no-repeat  center;
     background-size: cover;
@@ -29,7 +30,7 @@ body{
    .mynavbar{
     z-index: 4;
     top:0;
-    position: static;
+    position: relative;
     width:100%;
     height:10em;
     border:none;
@@ -40,7 +41,6 @@ body{
   .navbar{
     background-color:transparent;
     color:darkgray;
-    overflow:hidden;
     width:100%;
     text-align: center;
     font-family: monospace;
@@ -55,13 +55,13 @@ body{
     float:left;
     font-size:18px;
     text-align:center;
-    padding:10px 3px;
+    padding:5px 3px;
     margin: 0 25px;
 	text-decoration:none;
   }
   
   .navbar a:hover {
-   border-bottom: 1px solid white;
+   border-bottom: .5px solid white;
       border-bottom-width: medium;
       border-bottom-style:groove;
   }
@@ -118,7 +118,56 @@ body{
     }
 }
 
-  
+/* responsive overflow control*/
+@media only screen and (max-width:768px){
+    body{
+        overflow-x:hidden;
+    }
+}
+
+
+/* website thumbnail responsive*/
+@media only screen and (max-width:768px){
+    
+    .web-display{
+        display: block;
+        position: relative;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        
+    }
+}
+    
+.flex-row{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-column-quarter{
+    flex:25%;
+    padding: 20px;
+}
+
+.flex-column-half{
+    flex:50%;
+    padding: 20px;
+}
+
+.flex-column-athird{
+    flex:33%;
+    padding: 20px;
+}
+
+/* for website work brief text (responsive flex)*/
+@media only screen and (max-width:768px) {
+    .flex-row{
+        flex-direction: column;
+    }
+}
+
   h1{
     font-family:Amarante;Impact;
     font-size:60px;
@@ -236,8 +285,8 @@ h2{
 
 
 
-  .poster-thumbnails { /*portfolio thumbnails*/
-    width: 350px;
+  .poster-thumbnails { /*poster thumbnails*/
+    width: 25em;
     text-align:center;
     margin: 10px;
     padding: 0px;    
@@ -245,9 +294,10 @@ h2{
   
 @media only screen and (max-width:768px){
     .poster-thumbnails{
-        width: 300px;
+        width: 20em;
     }
 }
+
 
   .poster-thumbnails:hover{
     transform: scale(1.1,1.1);
@@ -331,6 +381,7 @@ h2{
 .footer{
     background-color:beige;
     padding:30px 0px;
+    
 }
 
 .footer-text{
@@ -398,4 +449,70 @@ h2{
 .gotop-btn:hover{
     transform: scale(1.2,1.2);
 
+}
+
+.brief-web {
+ line-height: 1em;
+ color: #585858;
+ padding: 0;
+}
+
+
+.rwd-title{
+    font-size:3.2em;
+    color: floralwhite;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family:fantasy;
+}
+
+a.rwd-title{
+    font-size:1em;
+    color: floralwhite;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family:fantasy;
+}
+
+a.rwd-title:hover{
+    text-decoration: none;
+}
+
+@media only screen and (max-width:768px) {
+    .rwd-title{
+        font-size: 1.7em;
+        text-align: center;
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display:none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: 40px 0 0 24px;
+    padding: 12px 10px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    transform: scale(1.1,1.1)
+    
 }
