@@ -173,6 +173,7 @@ body{
         margin-top: 0.4em;
         padding: 0;
         margin-left: 1em;
+        background-color: transparent;
     }
     
     .responsive .dropdown-content a:hover{
